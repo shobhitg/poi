@@ -7,6 +7,8 @@
 // 'test/spec/{,*/}*.js'
 // If you want to recursively match all subfolders, use:
 // 'test/spec/**/*.js'
+var proxyMiddleware = require('http-proxy-middleware');
+var proxy = proxyMiddleware('/api', {target: 'http://jsonplaceholder.typicode.com/posts'});
 
 module.exports = function (grunt) {
 
@@ -76,6 +78,7 @@ module.exports = function (grunt) {
           port: 9000,
           server: {
             baseDir: ['.tmp', config.app],
+            middleware: proxy,
             routes: {
               '/bower_components': './bower_components'
             }
