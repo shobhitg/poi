@@ -19,6 +19,11 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
+  <script>
+    function runNginx() {
+      $.get('http://localhost:9000/api/apps/install');
+    }
+  </script>
 </head>
 
 <body>
@@ -58,7 +63,7 @@
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Actions<strong class="caret"></strong></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="#">Push App</a>
+                    <a id="modal-264234" href="#modal-container-264234" role="button" data-toggle="modal">Push App</a>
                   </li>
                   <li>
                     <a href="#">Migrate</a>
@@ -77,6 +82,74 @@
                 </ul>
               </li>
             </ul>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+
+
+                  <div class="modal fade" id="modal-container-264234" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            ×
+                          </button>
+                          <h4 class="modal-title" id="myModalLabel">
+                            Push App
+                          </h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="btn-group">
+
+                                  <button class="btn btn-default">
+                                    Select
+                                  </button>
+                                  <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a href="#">Nest</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Honeywell</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Phillips</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                      <a href="#">Something else here</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+
+                          <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary"   onclick="runNginx();">
+                            Execute
+                          </button>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
             <div class="tab-content">
               <div class="tab-pane active" id="tab1">
                 <div class="thermostat1 hidden">
