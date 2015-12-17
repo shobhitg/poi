@@ -6,7 +6,7 @@ module.exports = function(App) {
     var cmd = 'docker run -d -p 80:80 ' + name;
     console.log('cmd: ' + cmd);
     sequest('root@10.32.34.88', { command: cmd, password:'ca$hc0w'}, function (e, stdout) {
-      //if (e) throw e
+      // if (e) throw e
       console.log(stdout.split('\n'))
       cb(null, stdout.split('\n'));
     })

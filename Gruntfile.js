@@ -8,7 +8,7 @@
 // If you want to recursively match all subfolders, use:
 // 'test/spec/**/*.js'
 var proxyMiddleware = require('http-proxy-middleware');
-var proxy = proxyMiddleware('/api', {target: 'http://jsonplaceholder.typicode.com/posts'});
+var proxy = proxyMiddleware('/api', {target: 'http://localhost:3000'});
 
 module.exports = function (grunt) {
 
