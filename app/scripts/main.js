@@ -49,6 +49,12 @@ $('#tree').on('nodeSelected', function(event, data) {
     $('.thermostat2').addClass('hidden');
   }
 
+  if(data.text === 'Thermostats') {
+    $('.thermostat-cluster').removeClass('hidden');
+  } else {
+    $('.thermostat-cluster').addClass('hidden');
+  }
+
   console.log(data);
 });
 
