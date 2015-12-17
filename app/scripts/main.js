@@ -52,4 +52,6 @@ $('#tree').on('nodeSelected', function(event, data) {
   console.log(data);
 });
 
+$('.combobox').combobox();
+
 console.log('\'Allo \'Allo!'); // eslint-disable-line no-console

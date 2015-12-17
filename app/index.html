@@ -11,6 +11,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+  <link rel="stylesheet" href="/app/libs/bootstrap-combobox.css" />
+
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/bootstrap-treeview/dist/bootstrap-treeview.min.css" />
@@ -103,31 +105,11 @@
                           <div class="container-fluid">
                             <div class="row">
                               <div class="col-md-12">
-                                <div class="btn-group">
-
-                                  <button class="btn btn-default">
-                                    Select
-                                  </button>
-                                  <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
-                                    <span class="caret"></span>
-                                  </button>
-                                  <ul class="dropdown-menu">
-                                    <li>
-                                      <a href="#">Nest</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">Honeywell</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">Phillips</a>
-                                    </li>
-                                    <li class="divider">
-                                    </li>
-                                    <li>
-                                      <a href="#">Something else here</a>
-                                    </li>
-                                  </ul>
-                                </div>
+                                  <select class="combobox">
+                                    <option value="Nest">Nest</option>
+                                    <option value="Honeywell">Honeywell</option>
+                                    <option value="Phillips">Phillips</option>
+                                  </select>
                               </div>
                             </div>
                           </div>
@@ -260,13 +242,14 @@
     </div>
   </div>
 
+  <script src="/app/libs/bootstrap-combobox.js"></script>
+
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/bootstrap-treeview/dist/bootstrap-treeview.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
-
 
   <!-- build:js(.) scripts/plugins.js -->
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
