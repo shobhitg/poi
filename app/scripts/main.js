@@ -1,34 +1,30 @@
 var tree = [
   {
-    text: "Parent 1",
+    text: "Palo Alto Medical Foundation",
     nodes: [
       {
-        text: "Child 1",
+        text: "Thermostats",
         nodes: [
           {
-            text: "Grandchild 1"
+            text: "Thermostat-01"
           },
           {
-            text: "Grandchild 2"
+            text: "Thermostat-02"
           }
         ]
       },
       {
-        text: "Child 2"
+        text: "Remote patient monitoring",
+        nodes: [
+          {
+            text: "Patient-A"
+          },
+          {
+            text: "Patient-B"
+          }
+        ]
       }
     ]
-  },
-  {
-    text: "Parent 2"
-  },
-  {
-    text: "Parent 3"
-  },
-  {
-    text: "Parent 4"
-  },
-  {
-    text: "Parent 5"
   }
 ];
 
