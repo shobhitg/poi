@@ -37,6 +37,18 @@ $('#tree').treeview({data: getTree()});
 
 $('#tree').on('nodeSelected', function(event, data) {
   // Your logic goes here
+  if(data.text === 'Thermostat-01') {
+    $('.thermostat1').removeClass('hidden');
+  } else {
+    $('.thermostat1').addClass('hidden');
+  }
+
+  if(data.text === 'Thermostat-02') {
+    $('.thermostat2').removeClass('hidden');
+  } else {
+    $('.thermostat2').addClass('hidden');
+  }
+
   console.log(data);
 });
 
