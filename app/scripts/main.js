@@ -35,5 +35,9 @@ function getTree() {
 
 $('#tree').treeview({data: getTree()});
 
+$('#tree').on('nodeSelected', function(event, data) {
+  // Your logic goes here
+  console.log(data);
+});
 
 console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
