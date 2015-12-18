@@ -1,7 +1,9 @@
 var tree = [
   {
     text: "Palo Alto Medical Foundation",
-    nodes: [
+    nodes:[{
+      text: "Sunnyvale",
+      nodes: [
       {
         text: "Thermostats",
         nodes: [
@@ -24,7 +26,36 @@ var tree = [
           }
         ]
       }
+
     ]
+    },{
+      text: "Mountain View",
+      nodes: [
+        {
+          text: "thermostats",
+          nodes: [
+            {
+              text: "Thermostat-01"
+            },
+            {
+              text: "Thermostat-02"
+            }
+          ]
+        },
+        {
+          text: "Remote patient monitoring",
+          nodes: [
+            {
+              text: "Patient-A"
+            },
+            {
+              text: "Patient-B"
+            }
+          ]
+        }
+
+      ]
+    }]
   }
 ];
 
